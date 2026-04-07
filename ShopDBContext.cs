@@ -19,5 +19,6 @@ namespace Sh0pDB
         public DbSet<Product> products { get; set; }
         public DbSet<Category> categories { get; set; }
         public DbSet<Orders> orders{ get; set; }
+        public DbSet<OrderItem> orderitems { get; set; }
     }
 }
