@@ -26,9 +26,9 @@ namespace Sh0pDB
         }                                  // если у вас ошибка попробуйте писать
                                            // ~/.dotnet/tools/dotnet-ef вместо dotnet-ef
         //контекст
-        public DbSet<User> users { get; set; }
+       /* public DbSet<User> users { get; set; }
         public DbSet<Product> products { get; set; }
         public DbSet<Category> categories { get; set; }
-        public DbSet<Orders> orders { get; set; }
+        public DbSet<Orders> orders { get; set; }*/
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sh0pDB.Models
 {
-    internal class User
+    public class User
     {
         public int Id { get; set; }
         public string Email { get; set; }
@@ -19,13 +19,18 @@ namespace Sh0pDB.Models
             return $"Name  - {Name}\nEmail - {Email}\nAge   - {Age} y.o.";
         }
     }
-    internal class Category
+    public class Category
     {
         public int Id { get; set; }
         public string Type { get; set; }
+
+        public override string ToString()
+        {
+            return Type;
+        }
     }
 
-    internal class Product
+    public class Product
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -34,14 +39,14 @@ namespace Sh0pDB.Models
         public Category Category { get; set; }
     }
 
-    internal class Orders
+    public class Orders
     {
         public int Id { get; set; }
         public string Status { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public User User { get; set; }
     }
-    internal class OrderItem 
+    public class OrderItem 
     {
         public int Id { get; set; }
         public int Quantity { get; set; }

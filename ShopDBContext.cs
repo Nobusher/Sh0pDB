@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Sh0pDB
 {
-    internal class ShopDBContext : DbContext
+    public class ShopDBContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseNpgsql(
